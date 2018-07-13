@@ -1,4 +1,78 @@
+/* SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL  */
+
+/* Config principal dos icones    Config principal dos icones */
 #iconesheader{
+    display: flex;
+    justify-content: flex-end;
+        
+}
+#iconeemail{
+    padding: 5px;
+    border-radius: 100%;
     background-color: black;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+#iconeyoutube{
+    padding: 5px;
+    background-color: black;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+#iconefacebook{
+    padding: 5px;
+    background-color: black;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+#iconetwitter{
+    padding: 5px;
+    background-color: black;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+#iconeinstagram{
+    padding: 5px;
+    background-color: black;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+/* Trocar cor icones    Trocar cor icones    Trocar cor icones */
+#iconeemail:hover{
+    background-color: #d7473b;
     
+}
+#iconeyoutube:hover{
+    background-color: #fe0000;
+}
+#iconefacebook:hover{
+    background-color: #4267b2;
+}
+#iconetwitter:hover{
+    background-color: #1da1f2;
+}
+#iconeinstagram:hover{
+    background-color: #d93687;
+}
+
+/* TÍTULO     TÍTULO     TÍTULO     TÍTULO     */
+
+#titulo{
+    position: relative;
+    
+    left: 10px;
+
+}
+#menu{
+    font-family: 'Titillium Web', sans-serif;
 }

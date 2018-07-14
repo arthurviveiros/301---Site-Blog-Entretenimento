@@ -1,11 +1,37 @@
 /* SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL  */
 
 /* Config principal dos icones    Config principal dos icones */
-#iconesheader{
-    display: flex;
-    justify-content: flex-end;
-        
+
+/* Quando estiver com o mouse em cima, abre o menu */
+#iconemenu{
+    position: relative;
+    left: 85vw;  
+    padding: 5px;
+    border-radius: 100%;
+    background-color: black;
+    height: 6vw;
+    width: 6vw;
+    margin: 10px;
 }
+#iconemenu:hover{
+    background-color: white;
+    width: 90vw;
+    left: 0vw;
+    border-radius: 0%;
+    height: 70px;
+}
+#iconemenu:hover var{
+display: flex;
+
+}
+
+/* Menu de icones */
+#iconesheader{
+    display: none;
+    justify-content: flex-end;  
+
+}
+
 #iconeemail{
     padding: 5px;
     border-radius: 100%;
@@ -65,14 +91,49 @@
     background-color: #d93687;
 }
 
+
+/* RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__ */
+@media (min-width:400px){
+}
+
+
 /* TÍTULO     TÍTULO     TÍTULO     TÍTULO     */
 
 #titulo{
     position: relative;
-    
-    left: 10px;
+    padding: 10pt;
+    bottom: 33px;
+    width: 80%;
+    height: 80%;
 
 }
+
+/* MENU MENU MENU MENU MENU MENU MENU  */
 #menu{
-    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    position: relative;
+
+
+}
+.menuitems{
+    position: relative;
+    padding: 5px;
+    justify-content:  center;
+    bottom: 25.5vw;
+    left: 17vw;
+    font-size: 3vw;
+    display: flex;
+    position: relative;
+    font-family: 'Titillium Web';
+
+}
+
+#imagemenu{
+    position: relative;
+    padding: 5px;
+    justify-content:  center;
+    bottom: 50px;
+    left: 2vw;
+    height: 100%;
+    width: 100%;
 }

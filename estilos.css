@@ -5,29 +5,37 @@
 /* Quando estiver com o mouse em cima, abre o menu */
 
 body{
-    overflow-x: hidden;
+    overflow-x: hid0den;
+    margin: 0;
+    width: 100vw;
+}
+
+header{
+    background-image: url("images/header/bg.png");
+    height: 40vh;
+    width: 100%;    
+    display: flex;
+}
+
+#socialemenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150vw;    
+}
+
+a:link{
+    text-decoration: none;
 }
 
 /* Menu de icones */
 
-#titulobg{
+#iconesheader{  
     display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 0vw;
-    bottom: 50vh;
-    height: 125vh;
-    overflow: hidden;
-    z-index: 1;
-    opacity: 0.7;
-    flex-wrap: wrap;
-    width: 100%;
-}
-#iconesheader{
-    display: flex;
-    justify-content: flex-end;  
+    justify-content: flex-end;
+    margin: 0 0 0 12vw;
+    width: 42vw;  
     z-index: 5;
-    position: relative;
 }
 
 #iconeemail{
@@ -91,79 +99,86 @@ body{
 
 /* TÍTULO     TÍTULO     TÍTULO     TÍTULO     */
 
+#titulodiv{
+    width: 45vw;
+}
 
 #titulo{
-    position: relative;
     display: flex;
-    padding: 10pt;
-    bottom: 8vh;
-    width: 50%;
-    height: 50%;
+    padding: 70px 220px 0 0;
+    width: 40vw;
     z-index: 10;
 }
     /* MENU MENU MENU MENU MENU MENU MENU  */
 
+    #divmenu{
+        margin: 0 0 0 1vw;
+        width: 60vw;
+    }
+
 #menu{
     display: flex;
-    position: relative;
-    height: 15vh;
+    justify-content: flex-start;
+    flex-direction: row;
     z-index: 10;
-    bottom: 20vh;
+    bottom: 30vh;
     left: 39vw;
+    align-self: flex-end;
+    height: 7vh;
+    background-image: url("images/header/menu.png");
+    background-repeat: no-repeat;
+}
+
+#tituloemenu{
+    display: flex;
+    justify-content: space-between;
 }
 
 .menuitems{
-    position: relative;
-    padding: 5px;
+    margin: 1%; 
+    padding: 0px 0.4vw;
     justify-content:  center;
-    bottom: 13vh;
-    left: 17vw;
-    font-size: 1.8vw;
+    align-self: flex-start; 
+    font-size: 23px;
     display: flex;
-    position: relative;
     font-family: 'Titillium Web';
     z-index: 10;
     font-style: normal;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
-#imagemenu{
-    position: relative;
+/*#imagemenu{
     padding: 5px;
-    justify-content:  center;
     bottom: 20vh;
-    left: 50vw;
-    height: 10vh;
-    width: 100%;
+    display: flex;
+    align-content: flex-end;
+    width: 500px;
     z-index: 2;
-}
+}*/ 
+
 
 /* Notícias em DESTAQUE */
 
 #notS{
-    position: relative;
     left: 150px;
 }
 
 #notM{
     height: 10%;
-    position: relative;
-    bottom: 25vh;
+    bottom: 27vh;
     left: 5vw;
 }
 
 #notO{
     padding: 5px;
-    position: relative;
-    top: 93vh;
+    top: 96vh;
     right: 28vh;
     height: 30vh;
 }
 
 #notO1{
     padding: 5px;
-    position: relative;
     background-color: black;
     height: 4vw;
     width: 30vw;
@@ -176,7 +191,6 @@ body{
     }
 #notO2{
     padding: 5px;
-    position: relative;
     background-color: black;
     height: 4vw;
     width: 30vw;
@@ -189,7 +203,6 @@ body{
     }
 #notO3{
     padding: 5px;
-    position: relative;
     background-color: black;
     height: 4vw;
     width: 30vw;
@@ -202,7 +215,6 @@ body{
 }
 #notO4{
     padding: 5px;
-    position: relative;
     background-color: black;
     height: 4vw;
     width: 30vw;
@@ -227,7 +239,6 @@ body{
 #timeline{
     display: flex;
     flex-direction: column;
-    position: relative;
     bottom: 350px;
 
 }
@@ -243,12 +254,10 @@ body{
 
 
 .timelineimg{
-    position: relative;
     align-content: flex-start;
 }
 .timelinetxt{
 align-content: flex-end;
-position: relative;
 left: 5px;
 
 }
@@ -259,7 +268,6 @@ left: 5px;
     display: flex;
     align-content: center;
     align-items: center;
-    position: relative;
     bottom: 325px;
     flex-direction: column;
 
@@ -271,14 +279,12 @@ left: 5px;
 }
 
 #patrociniodir{
-    position: relative;
     display: flex;
     align-content: flex-start;
     flex-direction: row;
 }
 
 #patrocinioesq{
-    position: relative;
     display: flex;
     align-content: flex-end;
     flex-direction: row;
@@ -287,7 +293,6 @@ left: 5px;
 .patrocinioimg{
     height: 100px;
     z-index: 10;
-    position: relative;
 }
 /* RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__ */
 @media (max-width:400px){
@@ -295,7 +300,6 @@ left: 5px;
     /* TÍTULO     TÍTULO     TÍTULO     TÍTULO     */
 
 #titulo{
-    position: relative;
     padding: 10pt;
     bottom: 33px;
     width: 50vw;

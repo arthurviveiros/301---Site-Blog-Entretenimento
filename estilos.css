@@ -364,9 +364,71 @@ a:link{
             width: 42vw;  
             z-index: 5;
         }
-    } 
-    @media (max-width:830px){
+        .timelinerow{
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .timelinerowp{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightcoral;
+        }
         
+        #notS{
+            display: none;
+        }
+        
+    } 
+    @media (max-width:800px) {
+        
+        #menu{
+            justify-content: flex-end;
+            display: flex;
+        }
+        #divmenu{
+            margin: 0 0 0 33vw;
+            width: 65vw;
+        }
+    }
+    @media (max-width:750px) {
+        
+        #menu{
+            justify-content: flex-end;
+            display: flex;
+        }
+        #divmenu{
+            margin: 0 0 0 28vw;
+            width: 70vw;
+        }
+    }
+    @media (max-width:700px) {
+        
+        #menu{
+            justify-content: flex-end;
+            display: flex;
+        }
+        #divmenu{
+            margin: 0 0 0 23vw;
+            width: 75vw;
+        }
+    }
+    @media (max-width:660px) {
+        
+        #menu{
+            justify-content: flex-end;
+            display: flex;
+        }
+        #divmenu{
+            margin: 0 0 0 17.5vw;
+            width: 80vw;
+        }
+        .menuitems{
+            font-size: 3.5vw;
+        }
     }
 }
 /* MEDIA PARA MOBILE */
@@ -379,8 +441,9 @@ a:link{
         display: none;
     }
     #iconemenu{
+        background-image: url(images/icons/user.png);
         display: flex;
-        padding: 7px;
+        padding: 10px;
         border-radius: 100%;
         background-color: black;
         height: 40px;
@@ -410,28 +473,41 @@ a:link{
         justify-content: flex-end;  
         
     }
-    #iconemenu:hover #divmenu{
-        display: flex;
-    }
     #menu{
-        width: 400px;
+        width: 230px;
+        
+    }
+    #menu:hover .menuitems{
+        font-size: 15px;
     }
     #notIMG{
         height: 200px;
         width: 70vh;
     }
     
+    .timelinerow{
+        flex-direction: column;
+    }
+    .timelinerowp{
+        flex-direction: column;
+    }
+    .timelineimg{
+        display: flex;
+        height: 300px;
+        width: 300px;
+        flex-direction: column;
+        padding: 10px 0 0 35px;
+        
+    }   
+    .menuitems{
+        font-size: 0px;
+    }
+    #notM{
+        display: none;
+    }
+    #notS{
+        display: none;
+    }
 }
-.timelinerow{
-    flex-direction: column;
-}
-.timelinerowp{
-    flex-direction: column;
-}
-.timelineimg{
-    display: flex;
-    height: 150px;
-    width: 100px;
-    flex-direction: column;
 
-}
+/* Você não quer dar um commit primeiro?? Ou vai esperar acabar a porra toda de uma vez? */

@@ -5,7 +5,7 @@
 /* Quando estiver com o mouse em cima, abre o menu */
 
 body{
-    overflow-x: hid0den;
+    overflow-x: hidden;
     margin: 0;
     width: 100vw;
 }
@@ -364,15 +364,74 @@ a:link{
             width: 42vw;  
             z-index: 5;
         }
-    }
+    } 
     @media (max-width:830px){
         
     }
 }
-/* Poe o overflow: hidden 
-
-body{
-    overflow-x: hidden;
+/* MEDIA PARA MOBILE */
+@media (max-width:400px){
+    header{
+        height: 200px;
+    }
+    
+    #titulodiv{
+        display: none;
+    }
+    #iconemenu{
+        display: flex;
+        padding: 7px;
+        border-radius: 100%;
+        background-color: black;
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+        justify-content: flex-end;
+    }
+    #iconemenu:hover{
+        
+        background-image: url(images/header/bg.png);
+        height: 100px;
+        width: 95vw;
+        border-radius: 0%;
+        padding: 0;
+        margin: 0;
+    }
+    #iconemenu:hover #iconesheader{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 0 12vw;
+        width: 42vw;  
+        z-index: 5;
+    }
+    
+    #iconesheader{
+        display: none;
+        justify-content: flex-end;  
+        
+    }
+    #iconemenu:hover #divmenu{
+        display: flex;
+    }
+    #menu{
+        width: 400px;
+    }
+    #notIMG{
+        height: 200px;
+        width: 70vh;
+    }
+    
 }
+.timelinerow{
+    flex-direction: column;
+}
+.timelinerowp{
+    flex-direction: column;
+}
+.timelineimg{
+    display: flex;
+    height: 150px;
+    width: 100px;
+    flex-direction: column;
 
-*/
+}

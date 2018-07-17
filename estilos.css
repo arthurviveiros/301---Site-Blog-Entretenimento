@@ -474,11 +474,11 @@ a:link{
         
     }
     #menu{
-        width: 230px;
+        width: 302px;
         
     }
     #menu:hover .menuitems{
-        font-size: 15px;
+        font-size: 13px;
     }
     #notIMG{
         height: 200px;
@@ -496,7 +496,7 @@ a:link{
         height: 300px;
         width: 300px;
         flex-direction: column;
-        padding: 10px 0 0 35px;
+        padding: 10px 0 0 0px;
         
     }   
     .menuitems{

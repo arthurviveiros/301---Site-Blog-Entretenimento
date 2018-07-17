@@ -109,12 +109,12 @@ a:link{
     width: 40vw;
     z-index: 10;
 }
-    /* MENU MENU MENU MENU MENU MENU MENU  */
+/* MENU MENU MENU MENU MENU MENU MENU  */
 
-    #divmenu{
-        margin: 0 0 0 1vw;
-        width: 60vw;
-    }
+#divmenu{
+    margin: 0 0 0 1vw;
+    width: 60vw;
+}
 
 #menu{
     display: flex;
@@ -192,9 +192,9 @@ a:link{
     bottom: 80.1vw;
     left: 55vw;
 }
-    #notO1:hover{
-        background-color: red;
-    }
+#notO1:hover{
+    background-color: red;
+}
 #notO2{
     padding: 5px;
     background-color: black;
@@ -204,9 +204,9 @@ a:link{
     bottom: 80.1vw;
     left: 55vw;
 }
-    #notO2:hover{
-        background-color: red;
-    }
+#notO2:hover{
+    background-color: red;
+}
 #notO3{
     padding: 5px;
     background-color: black;
@@ -235,6 +235,7 @@ a:link{
     color: white;
     justify-content: center;
     height: 0%;
+    font-size: 2vh;
 }
 
 /* TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE  TIMELINE*/
@@ -248,7 +249,7 @@ a:link{
     display: flex;
     flex-direction: column;
     bottom: 350px;
-
+    
 }
 .timelinerow{
     flex-direction: row;
@@ -265,9 +266,9 @@ a:link{
     align-content: flex-start;
 }
 .timelinetxt{
-align-content: flex-end;
-left: 5px;
-
+    align-content: flex-end;
+    left: 5px;
+    
 }
 
 /*  PROCURA E PATROCINIOS  PROCURA E PATROCINIOS  PROCURA E PATROCINIOS  PROCURA E PATROCINIOS  PROCURA E PATROCINIOS  PROCURA E PATROCINIOS */
@@ -278,7 +279,7 @@ left: 5px;
     align-items: center;
     bottom: 325px;
     flex-direction: column;
-
+    
 }
 
 #patimg{
@@ -303,16 +304,70 @@ left: 5px;
     z-index: 10;
 }
 /* RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__RESPONSABILIDADE__ICONES__ */
-@media (max-width:400px){
-
+@media (max-width:997px){
     /* TÍTULO     TÍTULO     TÍTULO     TÍTULO     */
-
-#titulo{
-    padding: 10pt;
-    bottom: 33px;
-    width: 50vw;
-    z-index: 10;
-}
+    
+    header{
+        background-image: url("images/header/bg.png");
+        height: 33vh;
+        width: 100%;    
+        display: flex;
+    }
+    
+    #titulodiv{
+        width: 43vw;
+    }
+    
+    #titulo{
+        display: flex;
+        padding: 70px 220px 0 0;
+        width: 45w;
+        z-index: 10;
+        
+    }
+    
+    /* .notTx{
+        color: white;
+        justify-content: center;
+        font-size: 1.3vw;
+        height: 0%;
+    } */
+    
+    @media (max-width:950px){
+        #titulodiv{
+            width: 40vw;
+        }
+        #iconesheader{
+            margin: 0 0 0 17vw;
+        }
+    }
+    
+    @media (max-width:899px){
+        #titulo{
+            display: none;
+        }
+        #titulodiv{
+            display: none;
+        }
+        #menu{
+            justify-content: flex-end;
+            display: flex;
+        }
+        #divmenu{
+            margin: 0 0 0 38vw;
+            width: 60vw;
+        }
+        #iconesheader{  
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 0 0 57vw;
+            width: 42vw;  
+            z-index: 5;
+        }
+    }
+    @media (max-width:830px){
+        
+    }
 }
 /* Poe o overflow: hidden 
 
